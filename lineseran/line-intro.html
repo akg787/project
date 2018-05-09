@@ -1,0 +1,187 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>회사를 소개합니다!</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="linetitle1.PNG" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">회사소개</a></li>
+				<li><a href="#movie" data-rel="dialog">회사영상과음악</a></li>
+				<li><a href="#wizard" data-rel="dialog">회사채용정보</a></li>
+				<li><a href="#gallery" >회사사진</a></li>
+			</ul>
+		
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>&copy; 2016748061 안세란</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="linetitle2.PNG">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible">
+					<h3>LINE</h3>
+					<p>LINE은 2011년 6월 첫 출시 후 3년 만에 전 세계 사용자 5억 명이 함께 쓰는 명실상부한 글로벌 서비스로 성장했습니다. 현재 LINE은 17개 언어로 서비스되고 있으며, LINE의 서비스를 제공받는 국가의 수는 230개에 이릅니다. 일반적인 모바일 메신저를 넘어 전 세계 모든 사용자들이 일상생활 곳곳에서 친근하고 편리하게 사용할 수 있는 모바일 플랫폼을 제공하기 위해, 오늘도 LINE의 직원들은 세계 곳곳을 누비며 가슴 뛰는 도전을 펼치고 있습니다.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>LINE Plus Corporation</h3>
+					<p>LINE Plus Corporation은 2013년 한국에서 LINE의 글로벌 시장을 확장하기 위해 설립됐습니다. 세계 각국의 더 많은 사용자를 만나기 위해 기술, 디자인, 마케팅/영업, 홍보, 제휴 등의 분야에서 글로벌 업무가 진행되고 있습니다. 라인플러스의 직원들은 약 50개국에 이르는 각기 다른 국적의 동료들과 함께 글로벌 단위로 활동하고 있으며, 그 숫자는 점점 더 빠르게 증가하고 있습니다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>WOW</h3>
+					<p>LINE은 끊임없이 도전하는 회사입니다.
+                                우리는 치열한 경쟁 속에서 생존하기 위해 USER와 시장의 변화에 맞춰 계속 진화를 해 왔으며 이러한 과정에서 실패를 두려워하지 않고 혁신적인 방법을 모색하여 도전 함으로써 새로운 가치를 만들어 내고 있습니다. 현실에 안주하지 않고 계속 진화하여 혁신적인 가치를 제공하기 위해 우리가 추구해온 가치 기준을 한 마디로 표현한 것이 바로 “WOW일 것입니다.
+
+                                경쟁에서 트렌드가 되었던 제품이나 서비스는 USER 한 사람 한 사람의 “WOW로 대변되는 감동과 놀라움으로부터 시작되었습니다.
+                                한 사람 한 사람의 “WOW는 친구나 가족, 연인과 같은 주변 사람들에게 연쇄 작용을 일으켰고 결국 국경과 언어의 벽을 넘어 전 세계로 확산되었습니다. 그렇게 차곡 차곡 쌓인 WOW는 이노베이션이 되어 우리의 생활을 변화 시킬 수 있습니다.
+
+                “WOW는 단순히 제품이나 서비스에 국한된 이야기가 아닙니다.
+                LINE은 회사 내부의 모든 활동에 있어서도 시장이나 타사가 만들어 놓은 방식을 추종하지 않고 기대를 뛰어 넘는 우리만의 “WOW를 제공하기 위해서 항상 노력하고 있습니다.
+
+                                지금까지, 그리고 앞으로도 변함 없이 “WOW를 만들어 가기 위해 우리가 항상 마음에 간직해야 할 6개의 키워드가 있습니다.
+                                이 6개의 키워드가 모두 모였을 때 비로소 “WOW를 만들어 낼 수 있습니다.(NEEDS,SPEED,DETAIL,DATA,TEAMWORK,ENJOY) </p>
+				</div>
+				<div data-role="collapsible">
+					<h3>PRIDE</h3>
+					<p>회사가 만들어 가고자 하는 “WOW”는 혁신만을 추구해서는 실현되지 않습니다.
+                                        회사가 지속적으로 도전하며 끝없이 새로운 가치를 개발하고 창조해 나가기 위해서는, 사회의 룰을 지키고 주위 사람들을 존중하면서 겸손한 자세로 투명성을 유지하며 행동해야 합니다.
+
+                                        아무리 혁신적인 가치라 하더라도, 자기중심적이거나 누군가를 슬프게 하거나 사회적으로 받아들여 지지 않는 것이라면 크나큰 “WOW”를 선사할 수는 없습니다. 우리 사회와 외부 파트너, 팀, 그리고 옆에 앉아 있는 동료와 서로를 인정하고 존중하며 협력해야만 그 가치는 몇 배로 커지게 됩니다.
+
+                                        회사, 우리는 항상 스스로에게 묻습니다.
+                                        자신의 행동을 부모님, 파트너, 아이들, 친구, 동료 등 자신을 신뢰하는 소중한 사람들에게 당당히 보여 줄 수 있는지? 부끄럽지 않은 행동을 하고 있는지? 그리고, 자신의 프라이드를 훼손시키고 있지는 않은지?
+
+                                        회사, 우리가 행동할 때 염두에 두어야 할 3가지 키워드가 있습니다.
+                    LINE의 사원으로서, 서비스 제공자로서, 그리고 한 명의 사람으로서, 언제나 “PRIDE”를 가지고 LINE의 서비스를 통해 사회와 공존하며 성실히 마주합니다.(RESPECT존중,COLLABORATION협력,FAIRNESS공평)</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>서비스와 캐릭터사업</h3>
+					<p>Global Messenger, LlNE. 전 세계에서 가장  빠르게 성장하는 모바일 메신저와 LINE Stickers로 메신져의 대화를 즐겁게, 그밖에 LINE Games으로 LINE 캐릭터로 게임을 즐길 수 있고 다양한 모바일 앱을 제공합니다.LINE 프렌즈라는 개성있는 귀여운 캐릭터들로 인기를 끌어 각 도시 유명한 곳에서 팝업스토어로 만날 수 있습니다.</p>
+					<div  style="text-align:center">
+				<img src="lineF.PNG">
+				</div>
+				</div>
+				<div  style="text-align:center">
+				<img src="linem.PNG">
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>&copy; 2016748061 안세란</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>회사 영상과 음악</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">LINE 소개</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/IM7_sImUWgg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">line moment SNS</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/K8W5Sj6FuR4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+			<div class="ui-bar ui-bar-e">라인타운 '가나다송'</div><br/>
+			<li><audio controls width="100%" preload="metadata">
+				<source src="linetown.mp3" type="audio/mp3">
+			</audio></li>	
+			<img src="linesong.PNG" alt="" width="100%">
+		</div>
+		<div data-role="footer" data-theme="b">
+		
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard">
+		<div data-role="header">
+			<h1>회사 채용정보</h1>
+		</div>
+		<div data-role="content">
+			<div  style="text-align:center">
+					<img src="lines.PNG">
+				</div>			
+				<div data-role="collapsible">
+					<h3>원하는 포지션!</h3>
+					<p>다양한 Fintech Service(뱅크, Pay, 투자, 보험, 대출 등)에 대한 PC/Mobile 환경하의 웹서비스,웹앱 개발</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>회사에서 원하는 것</h3>
+					<p>	<div  style="text-align:center">
+				<img src="liness.PNG">
+				</div></p>
+				</div>
+				<div data-role="collapsible">
+					<h3>잘하면 더 좋은 것들</h3>
+					<p><div  style="text-align:center">
+				<img src="linesss.PNG">
+				</div></p>
+				</div>
+				<div  style="text-align:center">
+					<a href="https://recruit.linepluscorp.com/lineplus/career/list"><img src="linep.PNG"></a>
+				</div>		
+		</div>
+		<div data-role="footer">
+		<h1>&copy; 2016748061 안세란</h1>
+		</div>
+	</div>
+
+	
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>회사사진</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>	
+				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>	
+				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>	
+				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>	
+				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>	
+				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>	
+				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>	
+				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>	
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>&copy; 2016748061 안세란</h1>
+			<h1>출처</h1>
+			<a href="https://linepluscorp.com/">line</a>
+			<a href="https://www.youtube.com/channel/UCK08M2075Y5TOIc8l0aNIQA">lineKorea</a>
+			<a href="https://www.youtube.com/channel/UCE7aNDAWQWDrQqDEITYqK-g">linetown</a>
+		</div>		
+	</div>
+</div>	
+	
+</body>
+</html>
